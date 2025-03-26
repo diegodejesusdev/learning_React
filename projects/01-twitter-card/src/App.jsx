@@ -1,19 +1,26 @@
+import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard'
+
 export function App () {
     return (
-        <article>
-            <header>
-                <img src="https://unavatar.io/soundcloud/gorillaz" alt="SoundCloud" />
-                <div>
-                    <strong>Gorillaz</strong>
-                    <span>@gorillaz</span>
-                </div>
-            </header>
+        <section className='App'>
+            <TwitterFollowCard  
+                userName="gorillaz" 
+                name="gorillaz" 
+                isFollowing={false}
+            />
 
-            <aside>
-                <button>
-                    Seguir
-                </button>
-            </aside>
-        </article>
+            <TwitterFollowCard  
+                userName="anuel2blea" 
+                name="anuelaa" 
+                isFollowing
+            />
+
+            <TwitterFollowCard  
+                userName="badbunny15" 
+                name="badbunny" 
+                isFollowing
+            />
+        </section>
     )
 }
